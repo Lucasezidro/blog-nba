@@ -22,7 +22,7 @@ type InputProps = StyledInput & {
   placeholder: string;
 };
 
-export default function Input({
+export function Input({
   type,
   width,
   placeholder,
