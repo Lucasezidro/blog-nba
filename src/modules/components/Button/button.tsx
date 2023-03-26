@@ -25,13 +25,15 @@ export const Button = styled.button<StyledButtonProps>`
 
 type ButtonProps = StyledButtonProps & {
   text: string;
+  onClick?: () => void
 }
 
-export function Buttons ({ text, color, size }: ButtonProps) {
+export function Buttons ({ text, color, size, onClick }: ButtonProps) {
   return (
       <Button 
         size={size} 
         color={color}
+        onClick={onClick}
       >
         {text}
       </Button>
