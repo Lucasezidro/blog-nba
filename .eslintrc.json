@@ -1,0 +1,50 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "overrides": [
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-duplicate-imports": "error",
+        "no-empty-pattern": "warn",
+        "no-unused-vars": "warn",
+        "default-case": "warn",
+        "eqeqeq": "warn",
+        "array-bracket-spacing": "warn",
+        "computed-property-spacing": "warn",
+        "eol-last": ["error", "always"],
+        "max-len": ["error", { "code": 80 }]
+    }
+}
